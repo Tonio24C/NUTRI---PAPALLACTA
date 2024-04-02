@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nutrillacta</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> <!-- Enlace al archivo CSS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <!-- Start of nutrillacta Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=971004ae-7407-4a82-b750-3ebc054f1400"> </script>
+    <!-- End of nutrillacta Zendesk Widget script -->
+    <header class="hero">
+        <nav class="nav container container--hero">
+            <h1>NUTRILLACTA</h1>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#nosotros" class="nav__link">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#noticias" class="nav__link">Noticias</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacto" class="nav__link">Contacto</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#footer" class="nav__link">Redes sociales</a>
+                    </li>
+                </ul>
+            <img src="{{ url_for('static', filename='assets/menu.svg') }}" class="nav__menu">
+        </nav>
+
+        <section class="hero__main container container--hero" id="nosotros">
+            <article class="hero__texts">
+                <h1 class="hero__title">NUTRILLACTA</h1>
+                <p class="hero__paragraph">Es un proyecto apasionante que fusiona la tradición
+                    artesanal con el amor maternal para ofrecer productos lácteos
+                    únicos y nutritivos. Este emprendimiento es liderado por un
+                    grupo de madres comunitarias comprometidas que han unido
+                    sus talentos y conocimientos para crear delicias lácteas que van
+                    más allá de la excelencia culinaria: son expresiones de cuidado,
+                    dedicación y nutrición</p>
+                <!--<a href="index2.html" class="hero__cta" target="_blank">Mas informacion</a>-->
+            </article>
+            <figure class="hero__figure">
+                <img src="{{ url_for('static', filename='assets/fondonutrillacta7.png') }}" class="hero__img ">
+            </figure>
+        </section>
+    </header>
+
+    <main class="main">
+        <section class="about" id="nosotros">
+            <article class="about__container container">
+                <figure class="about__figure">
+                    <img src="{{ url_for('static', filename='assets/logo1.png') }}" class="about__img">
+                </figure>
+                <div class="about__texts">
+                    <h2 class="subtitle">Visión</h2>
+                    <p class="paragraph">Ser una asociación líder en la
+                        producción y comercialización
+                        sostenible de lácteos y hortalizas,
+                        promoviendo la colaboración y el
+                        crecimiento de emprendedores
+                        locales.</p>
+                    <h2 class="subtitle">Misión</h2>
+                    <p class="paragraph">Facilitar el éxito de nuestros
+                        miembros a través de la promoción
+                        de prácticas agrícolas sostenibles, el
+                        acceso a mercados locales y la
+                        cooperación entre emprendedores.</p>
+                </div>
+            </article>
+        </section>
+        <section class=" container" id="noticias">
+            <h2 class="subtitlearnle">Noticias</h2>
+                <div class="learn__articles">
+                    <article class="learn__article">
+                        <!--<img src="Visita.jpg" class="learn__img">-->
+                            <h2 class="learn__title">Visita del Instituto Tecnologico Universitario Ismac</h2>
+                                <p class="paragraph">El Instituto Tecnologico Universitario Ismac realizo una visita con los 
+                                    estudiantes de Marketing, Gastronomia y Desarrollo de Software.
+                                </p>
+                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FTecnoUniISMAC%2Fposts%2Fpfbid02PS2JwCxoZzH6HRPKrh3zoDZpBxhFm18b1cW8ukwJ1YNz8gM6jRHa68QHzRqfWKLrl&show_text=true&width=500" width="500" height="805" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </article>
+                    <article class="learn__article">
+                        <img src="{{ url_for('static', filename='assets/Queso.jpg') }}" class="learn__img">
+                            <h2 class="learn__title">Queso Artesanal</h2>
+                                <p class="paragraph">El queso artesanal es un tipo de queso que se produce de forma tradicional, 
+                                    con métodos y técnicas que han sido perfeccionados a lo largo del tiempo. A diferencia de los quesos industriales, 
+                                    que suelen ser producidos en grandes cantidades y con procesos estandarizados, 
+                                    el queso artesanal se elabora en pequeñas cantidades y suele tener un enfoque más artesanal y personalizado.<br><br>
+
+                                    El proceso de producción del queso artesanal generalmente implica el uso de leche de alta calidad, 
+                                    obtenida de animales alimentados de manera natural y criados en condiciones saludables. Los queseros 
+                                    artesanales suelen seguir recetas tradicionales y emplear técnicas de fabricación que pueden variar según 
+                                    la región y el tipo de queso que están produciendo.<br><br>
+
+                                    El queso artesanal se valora por su sabor distintivo y su carácter único, que puede variar 
+                                    según factores como la alimentación del ganado, el tipo de bacterias y levaduras utilizadas en la 
+                                    fermentación, el tiempo de maduración y el proceso de afinado.
+                                </p>
+                    </article>
+                <article class="learn__article">
+                    <img src="{{ url_for('static', filename='assets/Mermelada.jpg') }}" class="learn__img">
+                        <h2 class="learn__title">Mermelada Artesanal</h2>
+                            <p class="paragraph">La mermelada artesanal es una deliciosa conserva de frutas que se elabora de manera tradicional, 
+                                generalmente en pequeñas cantidades, utilizando técnicas y recetas caseras. A diferencia de las mermeladas industriales, 
+                                que a menudo contienen conservantes y aditivos, las mermeladas artesanales suelen estar hechas con ingredientes naturales y frescos. <br><br>
+                                
+                                El proceso de elaboración de la mermelada artesanal implica cocinar frutas frescas o congeladas con azúcar y, 
+                                a veces, con algún agente gelificante como pectina, hasta que adquiera una consistencia espesa y gelatinosa. 
+                                Se pueden agregar otros ingredientes, como especias o hierbas, para darle un sabor y aroma únicos.<br><br>
+
+                                Los productores de mermelada artesanal suelen cuidar cada etapa del proceso, 
+                                desde la selección de las frutas hasta el envasado final. Algunos incluso pueden optar por métodos 
+                                de conservación más naturales, como el envasado al vacío o la esterilización, para garantizar la 
+                                frescura y la calidad del producto durante más tiempo.<br><br>
+                            </p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!--formulario--> 
+    <div class="content" id="contacto">
+        <h1 class="logo">Contacto</h1>
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <form action="/form" method="post">
+                    <p>
+                        <label>Nombre Completo</label>
+                        <input type="text" name="fullname">
+                    </p>
+                    <p>
+                        <label>Correo</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Numero de Celular</label>
+                        <input type="tel" name="phone">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="affair">
+                    </p>
+                    <p class="block">
+                        <label>Mensaje</label> 
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit">Send</button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Mas Informacion</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>Papallacta</li>
+                    <li><i class="fas fa-phone"></i>1111111111</li>
+                    <li><i class="fas fa-envelope-open-text"></i>nutrillacta2024@gmail.com </li>
+                </ul>
+                <p>Papallacta es una localidad del cantón Quijos, provincia de Napo, Ecuador. Situada 67 kilómetros al este de la ciudad de Quito.</p>
+                <p>Nutrillacta</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer" id="footer">
+        <section class="footer__container container">
+            <h2 class="subtitle">Redes Sociales</h2>
+            <ul class="footer__contact">
+                <li class="footer__item">
+                    <a href="https://www.facebook.com/profile.php?id=61556936661179" class="footer__link" target="_blank">
+                        <img src="{{ url_for('static', filename='rsocials/logo-facebook.svg') }}" class="footer__img">
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="https://www.pinterest.es/nutrillacta2024/" class="footer__link" target="_blank">
+                        <img src="{{ url_for('static', filename='rsocials/logo-pinterest.svg') }}" class="footer__img">
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="https://www.tiktok.com/@nutrillacta?is_from_webapp=1&sender_device=pc" class="footer__link" target="_blank">
+                        <img src="{{ url_for('static', filename='rsocials/logo-tiktok.svg') }}" class="footer__img">
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="https://www.linkedin.com/in/nutri-llacta-4807362b5/" class="footer__link" target="_blank">
+                        <img src="{{ url_for('static', filename='rsocials/logo-linkedin.svg') }}" class="footer__img">
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="https://youtube.com/@Nutrillacta-ls1si?si=If1ZTrjVehyMNumy" class="footer__link" target="_blank">
+                        <img src="{{ url_for('static', filename='rsocials/logo-youtube.svg') }}" class="footer__img">
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="https://www.instagram.com/nutrillacta2024/" class="footer__link" target="_blank">
+                        <img src="{{ url_for('static', filename='rsocials/logo-instagram.svg') }}" class="footer__img">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
